@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form name="ExpenseForm">
+            <h1>Book Your Appointment</h1>
+            <label>Amount</label>
+            <input type="number" name="Amount" />
+            <label>Description</label>
+            <select id="Description" name="Description">
+                <option value="Food">Food</option>
+                <option value="Hospital">Hospital</option>
+                <option value="Fuel">Fuel</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Other">Other</option>
+            </select>
+            <label>Date</label>
+            <input type="date" name="Date" />
+            <button id="addBtn" type="submit">Add Expense</button>
+        </form>
+        <div>
+            <ol id="showUser">
+
+            </ol>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="ExpenseScript.js"></script>
+</body>
+
+</html>
